@@ -1,0 +1,61 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  min-width: 1280px;
+  background: rgb(214, 225, 127);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.middle {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+
+  background: black;
+  border: 50px solid #e67630;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+
+  background: rgb(240, 38, 38);
+}
+
+.left,
+.right {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+
+  border: 50px solid #e67630;
+  border-top: 50px solid transparent;
+  border-left: 50px solid transparent;
+
+  background: transparent;
+}
+
+.left {
+  left: 340px;
+  transform: rotate(45deg);
+}
+
+.right {
+  right: 340px;
+  transform: rotate(225deg);
+}
